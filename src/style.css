@@ -1,0 +1,178 @@
+body{
+font-family:"Lexend", sans-serif;
+background:linear-gradient(135deg,#4b0f1f,#7b1e3a,#9e2a4d);
+margin:0;
+padding:30px;
+min-height:100vh;
+color:#2c1a1f;
+overflow-x:hidden;
+}
+
+h1{
+font-family:"Oooh Baby", cursive;
+text-align:center;
+font-size:60px;
+color:white;
+margin-bottom:5px;
+text-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+.subtitle{
+text-align:center;
+margin-bottom:30px;
+color:#f3d7df;
+font-weight:300;
+}
+
+.calendar{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.month{
+background:white;
+border-radius:16px;
+box-shadow:0 12px 35px rgba(0,0,0,0.25);
+padding:18px;
+}
+
+.month-title{
+font-family:"Archivo Black", sans-serif;
+font-size:18px;
+margin-bottom:10px;
+text-align:center;
+color:#7b1e3a;
+}
+
+.weekdays{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+text-align:center;
+font-size:12px;
+color:#7b1e3a;
+margin-bottom:6px;
+}
+
+.days{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:4px;
+}
+
+.day{
+height:50px;
+display:flex;
+align-items:flex-start;
+justify-content:flex-end;
+padding:6px;
+border-radius:8px;
+cursor:pointer;
+transition:all 0.25s ease;
+background:#faf3f6;
+font-size:13px;
+}
+
+.day:hover{
+background:#f3c6d2;
+transform:scale(1.05);
+}
+
+.day-number{
+font-weight:500;
+}
+
+/* FECHAS IMPORTANTES */
+
+.special{
+background:#7b1e3a;
+color:white;
+font-family:"Anton", sans-serif;
+letter-spacing:1px;
+}
+
+/* DIAS FUERA DEL RANGO */
+
+.day.disabled{
+background:transparent;
+color:#cbb5bc;
+cursor:default;
+opacity:0.35;
+pointer-events:none;
+}
+
+.day.disabled:hover{
+transform:none;
+background:transparent;
+}
+
+/* MODAL */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+display:none;
+align-items:center;
+justify-content:center;
+}
+
+.modal-card{
+background:white;
+border-radius:20px;
+padding:35px;
+max-width:360px;
+text-align:center;
+box-shadow:0 25px 60px rgba(0,0,0,0.4);
+}
+
+.modal-card h2{
+font-family:"Archivo Black", sans-serif;
+color:#7b1e3a;
+}
+
+.modal-buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+button{
+border:none;
+background:#7b1e3a;
+color:white;
+padding:10px 20px;
+border-radius:10px;
+cursor:pointer;
+font-family:"Lexend", sans-serif;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1000px){
+
+.calendar{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:650px){
+
+.calendar{
+grid-template-columns:1fr;
+}
+
+.day{
+height:42px;
+font-size:11px;
+}
+
+}
