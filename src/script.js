@@ -49,7 +49,9 @@ const notes = {
 "2026-03-03":"Entre risas, confesiones y miedos",
 "2026-03-04":"Semillas de un mañana",
 "2026-03-05":"Travesuras del destino y promesas en movimiento",
-"2026-03-06":"Amaneceres, risas y silencios que se extrañan"
+"2026-03-06":"Amaneceres, risas y silencios que se extrañan",
+"2026-03-07":"Cuando la ausencia también habla de amor",
+"2026-03-08":"A la mujer que ilumina mi vida"
 
 }
 
