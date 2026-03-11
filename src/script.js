@@ -52,7 +52,7 @@ const notes = {
 "2026-03-06":"Amaneceres, risas y silencios que se extrañan",
 "2026-03-07":"Cuando la ausencia también habla de amor",
 "2026-03-08":"A la mujer que ilumina mi vida",
-"2026-03-09":"Cuando el amor comienza a notarse"
+"2026-03-09":"Cuando el amor comienza a notarse",
 "2026-03-10":"Entre el susto y la esperanza"
 }
 
