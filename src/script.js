@@ -51,8 +51,9 @@ const notes = {
 "2026-03-05":"Travesuras del destino y promesas en movimiento",
 "2026-03-06":"Amaneceres, risas y silencios que se extrañan",
 "2026-03-07":"Cuando la ausencia también habla de amor",
-"2026-03-08":"A la mujer que ilumina mi vida"
-
+"2026-03-08":"A la mujer que ilumina mi vida",
+"2026-03-09":"Cuando el amor comienza a notarse"
+"2026-03-10":"Entre el susto y la esperanza"
 }
 
 const specialDates = [
@@ -82,7 +83,8 @@ current.setDate(1)
 
 while(current<=maxEnd){
 
-let monthName=current.toLocaleString("es",{month:"long"})
+let monthName=current.toLoc,
+  aleString("es",{month:"long"})
 monthName=monthName.charAt(0).toUpperCase()+monthName.slice(1)
 
 months.push({
