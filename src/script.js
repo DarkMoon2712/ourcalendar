@@ -83,8 +83,7 @@ current.setDate(1)
 
 while(current<=maxEnd){
 
-let monthName=current.toLoc,
-  aleString("es",{month:"long"})
+let monthName=current.toLocaleString("es",{month:"long"})
 monthName=monthName.charAt(0).toUpperCase()+monthName.slice(1)
 
 months.push({
