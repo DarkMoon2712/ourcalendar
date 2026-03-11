@@ -8,52 +8,53 @@ let currentDate = null
 
 const notes = {
 
-"2026-01-26":"La decisión que mi corazón ya había tomado",
-"2026-01-27":"Nos reconocimos más allá de las palabras",
-"2026-01-28":"Despertar sabiendo que ahora éramos nosotros",
-"2026-01-29":"Cuando tu fragilidad movió los cimientos de mi mundo",
-"2026-01-30":"El privilegio de encender tu luz",
-"2026-01-31":"El día en que nuestros nombres encontraron su dulzura",
+"2026-01-26":"La decisión que mi corazón ya había tomado ❤️",
+"2026-01-27":"Nos reconocimos más allá de las palabras ✨",
+"2026-01-28":"Despertar sabiendo que ahora éramos nosotros 🌅💞",
+"2026-01-29":"Cuando tu fragilidad movió los cimientos de mi mundo 🥺💔",
+"2026-01-30":"El privilegio de encender tu luz 🕯️❤️",
+"2026-01-31":"El día en que nuestros nombres encontraron su dulzura 🍯💞",
 
-"2026-02-01":"Cuando imaginamos el latido de lo que aún no nace",
-"2026-02-02":"El lenguaje secreto de nuestros deseos",
-"2026-02-03":"Cuando tu silencio estremeció mi cielo",
-"2026-02-04":"El secreto que cabía en la yema de tu dedo",
-"2026-02-05":"Cuando el amor aprendió a ser más fuerte que el miedo",
-"2026-02-06":"El día en que tus pasos se llevaron mi mundo",
-"2026-02-07":"El momento en que la espera se volvió alegría",
-"2026-02-08":"El día en que cada detalle hablaba de ti",
-"2026-02-09":"El instante donde el amor se volvió eterno",
-"2026-02-10":"El segundo encuentro donde el alma nos susurró su verdad",
-"2026-02-11":"El día en que el mundo supo que eras mía",
-"2026-02-12":"El día en que su aceptación me dio alas",
-"2026-02-13":"El día en que tejí nuestra historia en luz y suspiros",
-"2026-02-14":"El día en que la felicidad de tu ser se volvió mi orgullo",
-"2026-02-15":"El día en que su mensaje me despertó y el destino hizo una pregunta",
-"2026-02-16":"El día en que supe que tu luz era mi mayor verdad",
-"2026-02-17":"El día en que aprendí el sabor de tus sueños",
-"2026-02-18":"We crossed the line",
-"2026-02-19":"El día en que quise contemplar las huellas de nuestras madrugadas",
-"2026-02-20":"La noche en que el silencio pesó más que el miedo",
-"2026-02-21":"La noche en que el silencio me sostuvo el alma",
-"2026-02-22":"El segundo día sin tu voz",
-"2026-02-23":"La diferencia entre existir y vivir",
-"2026-02-24":"Cuando el milagro respondió en medio del llanto",
-"2026-02-25":"Entre la despedida y la promesa",
-"2026-02-26":"El día que el “sí” cambió mi destino",
-"2026-02-27":"El cansancio no pesa cuando el amor sostiene",
-"2026-02-28":"Cuando mi sonrisa ya no pudo ocultarte",
+"2026-02-01":"Cuando imaginamos el latido de lo que aún no nace 🤍👶",
+"2026-02-02":"El lenguaje secreto de nuestros deseos 🔐❤️‍🔥",
+"2026-02-03":"Cuando tu silencio estremeció mi cielo 🌌🥺",
+"2026-02-04":"El secreto que cabía en la yema de tu dedo 🤏✨",
+"2026-02-05":"Cuando el amor aprendió a ser más fuerte que el miedo ❤️🛡️",
+"2026-02-06":"El día en que tus pasos se llevaron mi mundo 🚶‍♀️💔",
+"2026-02-07":"El momento en que la espera se volvió alegría ⏳😊",
+"2026-02-08":"El día en que cada detalle hablaba de ti 🌸💌",
+"2026-02-09":"El instante donde el amor se volvió eterno ♾️❤️",
+"2026-02-10":"El segundo encuentro donde el alma nos susurró su verdad 🤍✨",
+"2026-02-11":"El día en que el mundo supo que eras mía 🌍💍",
+"2026-02-12":"El día en que su aceptación me dio alas 🕊️✨",
+"2026-02-13":"El día en que tejí nuestra historia en luz y suspiros ✨🧵❤️",
+"2026-02-14":"El día en que la felicidad de tu ser se volvió mi orgullo 🌹❤️",
+"2026-02-15":"El día en que su mensaje me despertó y el destino hizo una pregunta 📩✨",
+"2026-02-16":"El día en que supe que tu luz era mi mayor verdad 🌟❤️",
+"2026-02-17":"El día en que aprendí el sabor de tus sueños 🍃💭",
+"2026-02-18":"We crossed the line ❤️‍🔥✨",
+"2026-02-19":"El día en que quise contemplar las huellas de nuestras madrugadas 🌙👣",
+"2026-02-20":"La noche en que el silencio pesó más que el miedo 🌑💔",
+"2026-02-21":"La noche en que el silencio me sostuvo el alma 🌌🤍",
+"2026-02-22":"El segundo día sin tu voz 🕯️😔",
+"2026-02-23":"La diferencia entre existir y vivir 🌫️❤️",
+"2026-02-24":"Cuando el milagro respondió en medio del llanto 🙏✨",
+"2026-02-25":"Entre la despedida y la promesa 🥀🤍",
+"2026-02-26":"El día que el “sí” cambió mi destino 💍✨",
+"2026-02-27":"El cansancio no pesa cuando el amor sostiene 🤝❤️",
+"2026-02-28":"Cuando mi sonrisa ya no pudo ocultarte 😊❤️",
 
-"2026-03-01":"El mensaje que trajo alivio… y una sombra",
-"2026-03-02":"Cuando aprendí a cuidarte incluso de ti misma",
-"2026-03-03":"Entre risas, confesiones y miedos",
-"2026-03-04":"Semillas de un mañana",
-"2026-03-05":"Travesuras del destino y promesas en movimiento",
-"2026-03-06":"Amaneceres, risas y silencios que se extrañan",
-"2026-03-07":"Cuando la ausencia también habla de amor",
-"2026-03-08":"A la mujer que ilumina mi vida",
-"2026-03-09":"Cuando el amor comienza a notarse",
-"2026-03-10":"Entre el susto y la esperanza"
+"2026-03-01":"El mensaje que trajo alivio… y una sombra 📩🌤️",
+"2026-03-02":"Cuando aprendí a cuidarte incluso de ti misma 🫂❤️",
+"2026-03-03":"Entre risas, confesiones y miedos 😂🤍😌",
+"2026-03-04":"Semillas de un mañana 🌱✨",
+"2026-03-05":"Travesuras del destino y promesas en movimiento 🎭💫",
+"2026-03-06":"Amaneceres, risas y silencios que se extrañan 🌅🥺",
+"2026-03-07":"Cuando la ausencia también habla de amor 🌙💔",
+"2026-03-08":"A la mujer que ilumina mi vida 👑❤️✨",
+"2026-03-09":"Cuando el amor comienza a notarse 😊💞",
+"2026-03-10":"Entre el susto y la esperanza 😰✨"
+
 }
 
 const specialDates = [
@@ -73,7 +74,7 @@ return `${day}/${month}/${year}`
 }
 
 document.querySelector(".subtitle").innerText =
-`26 Enero 2026 — ${formatDate(end)}`
+`26/01/2026 — ${formatDate(end)}`
 
 function generateMonths(){
 
@@ -178,6 +179,33 @@ calendar.appendChild(monthDiv)
 
 }
 
+function explodeHearts(){
+
+for(let i=0;i<25;i++){
+
+let heart=document.createElement("div")
+heart.className="heart"
+heart.innerText="✮⋆˙"
+
+let x=(Math.random()*300-150)+"px"
+let y=(Math.random()*300-150)+"px"
+
+heart.style.left=(window.innerWidth/2)+"px"
+heart.style.top=(window.innerHeight/2)+"px"
+
+heart.style.setProperty("--x",x)
+heart.style.setProperty("--y",y)
+
+document.body.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+},1200)
+
+}
+
+}
+
 function openNote(date){
 
 currentDate = date
@@ -192,6 +220,7 @@ document.getElementById("modalText").innerHTML=`<em>"Hoy también pensé en ti �
 }
 
 document.getElementById("loveSound").play()
+explodeHearts()
 
 }
 
@@ -226,3 +255,31 @@ document.getElementById("modal").style.display="none"
 }
 
 buildCalendar()
+
+/* CORAZONES FLOTANTES */
+
+const heartContainer = document.createElement("div")
+heartContainer.className = "floating-hearts"
+document.body.appendChild(heartContainer)
+
+function createFloatingHeart(){
+
+const heart = document.createElement("div")
+heart.className = "floating-heart"
+heart.innerText = "❤︎"
+
+heart.style.left = Math.random()*100 + "vw"
+heart.style.fontSize = (Math.random()*18+12) + "px"
+
+const duration = Math.random()*6 + 6
+heart.style.animationDuration = duration + "s"
+
+heartContainer.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+}, duration*1000)
+
+}
+
+setInterval(createFloatingHeart, 500)
