@@ -53,9 +53,9 @@ const notes = {
 "2026-03-07":"Cuando la ausencia también habla de amor 🌙💔",
 "2026-03-08":"A la mujer que ilumina mi vida 👑❤️✨",
 "2026-03-09":"Cuando el amor comienza a notarse 😊💞",
-"2026-03-10":"Entre el susto y la esperanza 😰✨"
-"2026-03-11":"Entre el reposo del cuerpo y la esperanza del corazón💆‍♀️✨❤️",
-"2026-03-12":"Cuando el amor reescribe los planes del destino✍️❤️✨",
+"2026-03-10":"Entre el susto y la esperanza 😰✨",
+"2026-03-11":"Entre el reposo del cuerpo y la esperanza del corazón 💆‍♀️✨❤️",
+"2026-03-12":"Cuando el amor reescribe los planes del destino ✍️❤️✨",
 "2026-03-13":"Cuando el amor mira al miedo de frente y decide quedarse ❤️😰"
 
 }
