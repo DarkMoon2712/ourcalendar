@@ -56,7 +56,8 @@ const notes = {
 "2026-03-10":"Entre el susto y la esperanza 😰✨",
 "2026-03-11":"Entre el reposo del cuerpo y la esperanza del corazón 💆‍♀️✨❤️",
 "2026-03-12":"Cuando el amor reescribe los planes del destino ✍️❤️✨",
-"2026-03-13":"Cuando el amor mira al miedo de frente y decide quedarse ❤️😰"
+"2026-03-13":"Cuando el amor mira al miedo de frente y decide quedarse ❤️😰",
+"2026-03-14":"El día en que el mundo recibió al amor de mi vida 🥳🎂"
 
 }
 
