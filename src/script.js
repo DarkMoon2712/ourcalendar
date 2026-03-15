@@ -65,7 +65,8 @@ const specialDates = [
 "2026-01-26",
 "2026-02-14",
 "2026-02-26",
-"2026-03-08"
+"2026-03-08",
+"2026-03-14"
 ]
 
 const calendar = document.getElementById("calendar")
