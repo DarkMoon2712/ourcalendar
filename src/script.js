@@ -59,7 +59,13 @@ const notes = {
 "2026-03-13":"Cuando el amor mira al miedo de frente y decide quedarse ❤️😰",
 "2026-03-14":"El día en que el mundo recibió al amor de mi vida 🥳🎂",
 "2026-03-15":"Cuando el amor tiembla… pero aún así decide creer ❤️‍🩹",
-"2026-03-16":"Cuando el deseo se volvió lenguaje del alma ❤️‍🔥"
+"2026-03-16":"Cuando el deseo se volvió lenguaje del alma ❤️‍🔥",
+"2026-03-17":"Entre la distancia, los sueños y lo que ya somos 🤍✨",
+"2026-03-18":"Entre raíces del pasado y la calma de tu voz 🎶🕊️",
+"2026-03-19":"Cuando tu luz vuelve a encenderse ✨🔥",
+"2026-03-20":"Cuando incluso la ausencia lleva tu forma de amar ✨💖",
+"2026-03-21":"Cuando mi mundo se queda en pausa por ti 🌍❤️‍🩹",
+"2026-03-22":"Cuando tu voz se vuelve mi refugio en la ausencia 🎧💖"
 
 }
 
