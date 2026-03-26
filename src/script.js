@@ -66,8 +66,9 @@ const notes = {
 "2026-03-20":"Cuando incluso la ausencia lleva tu forma de amar ✨💖",
 "2026-03-21":"Cuando mi mundo se queda en pausa por ti 🌍❤️‍🩹",
 "2026-03-22":"Cuando tu voz se vuelve mi refugio en la ausencia 🎧💖",
-"2026-03-23":"Cuando incluso enfermo, mi refugio sigues siendo tú ❤️‍🩹"
-
+"2026-03-23":"Cuando incluso enfermo, mi refugio sigues siendo tú ❤️‍🩹",
+"2026-03-24":"Cuando tu regreso trae calma y verdad a mi corazón 🕊️💖✨",
+"2026-03-25":"Cuando quiero cuidarte… incluso más de lo que debería 💞🌙"
 }
 
 const specialDates = [
