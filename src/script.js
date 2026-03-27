@@ -68,7 +68,7 @@ const notes = {
 "2026-03-22":"Cuando tu voz se vuelve mi refugio en la ausencia 🎧💖",
 "2026-03-23":"Cuando incluso enfermo, mi refugio sigues siendo tú ❤️‍🩹",
 "2026-03-24":"Cuando tu regreso trae calma y verdad a mi corazón 🕊️💖✨",
-"2026-03-25":"Cuando quiero cuidarte… incluso más de lo que debería 💞🌙"
+"2026-03-25":"Cuando quiero cuidarte… incluso más de lo que debería 💞🌙",
 "2026-03-26":"Está bien doler un poco… cuando el amor es tan grande 🥺❤️‍🩹"
   
 }
