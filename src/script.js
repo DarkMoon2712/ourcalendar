@@ -69,7 +69,7 @@ const notes = {
 "2026-03-23":"Cuando incluso enfermo, mi refugio sigues siendo tú ❤️‍🩹",
 "2026-03-24":"Cuando tu regreso trae calma y verdad a mi corazón 🕊️💖✨",
 "2026-03-25":"Cuando quiero cuidarte… incluso más de lo que debería 💞🌙",
-"2026-03-26":"Está bien doler un poco… cuando el amor es tan grande 🥺❤️‍🩹"
+"2026-03-26":"Está bien doler un poco… cuando el amor es tan grande 🥺❤️‍🩹",
 "2026-03-27":"Cuando la verdad trae calma al corazón 🕊️🤍",
 "2026-03-28":"Cuando amar también es cuidar lo que no se ve ❤️‍🩹👀",
 "2026-03-29":"Cuando el amor se esconde en las preguntas más simples 💖❓✨"
