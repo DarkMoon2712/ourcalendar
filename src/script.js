@@ -72,7 +72,9 @@ const notes = {
 "2026-03-26":"Está bien doler un poco… cuando el amor es tan grande 🥺❤️‍🩹",
 "2026-03-27":"Cuando la verdad trae calma al corazón 🕊️🤍",
 "2026-03-28":"Cuando amar también es cuidar lo que no se ve ❤️‍🩹👀",
-"2026-03-29":"Cuando el amor se esconde en las preguntas más simples 💖❓✨"
+"2026-03-29":"Cuando el amor se esconde en las preguntas más simples 💖❓✨",
+"2026-03-30":"Cuando el amor aprende a quedarse incluso en lo mínimo 💖✨",
+"2026-03-31":"Cuando el amor se preocupa, sueña… y se vuelve hogar 💞🏡🤍"
   
 }
 
