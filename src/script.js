@@ -74,7 +74,10 @@ const notes = {
 "2026-03-28":"Cuando amar también es cuidar lo que no se ve ❤️‍🩹👀",
 "2026-03-29":"Cuando el amor se esconde en las preguntas más simples 💖❓✨",
 "2026-03-30":"Cuando el amor aprende a quedarse incluso en lo mínimo 💖✨",
-"2026-03-31":"Cuando el amor se preocupa, sueña… y se vuelve hogar 💞🏡🤍"
+"2026-03-31":"Cuando el amor se preocupa, sueña… y se vuelve hogar 💞🏡🤍",
+
+"2026-04-01":"Cuando la ilusión se desvanece… y el amor aprende a esperar ⏳💔🤍",
+"2026-04-02":"Cuando tu mundo comienza a convertirse en el mío 🌍💞✨"
   
 }
 
