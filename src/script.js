@@ -77,7 +77,10 @@ const notes = {
 "2026-03-31":"Cuando el amor se preocupa, sueña… y se vuelve hogar 💞🏡🤍",
 
 "2026-04-01":"Cuando la ilusión se desvanece… y el amor aprende a esperar ⏳💔🤍",
-"2026-04-02":"Cuando tu mundo comienza a convertirse en el mío 🌍💞✨"
+"2026-04-02":"Cuando tu mundo comienza a convertirse en el mío 🌍💞✨",
+"2026-04-03":"Cuando el tiempo se vuelve incierto… y el amor se vuelve más firme ⏳💞✨",
+"2026-04-04":"Cuando amar también es elegir no apresurar el tiempo 🕰️💖🤍",
+"2026-04-05":"Cuando el cansancio se transforma en sueños compartidos 😴💭💑"
   
 }
 
