@@ -82,7 +82,15 @@ const notes = {
 "2026-04-04":"Cuando amar también es elegir no apresurar el tiempo 🕰️💖🤍",
 "2026-04-05":"Cuando el cansancio se transforma en sueños compartidos 😴💭💑",
 "2026-04-06":"Cuando verte avanzar se vuelve parte de mis sueños 🚶‍♂️💭✨",
-"2026-04-07":"Cuando protegerte también nace desde el amor que no se contiene 🛡️💖🔥"
+"2026-04-07":"Cuando protegerte también nace desde el amor que no se contiene 🛡️💖🔥",
+"2026-04-08":"Cuando el amor busca claridad incluso en medio del silencio 🤫💞✨",
+"2026-04-09":"Cuando el amor se inquieta… pero también se reafirma 💓🤍✨",
+"2026-04-10":"Cuando el miedo se mezcla con el alivio 😰😮‍💨🤍",
+"2026-04-11":"Cuando el cansancio no apaga el amor… y la ilusión se acerca más que nunca 😴💖✨",
+"2026-04-12":"Cuando el amor también se abre paso hacia nuevos lazos 🤝💞✨",
+"2026-04-13":"Cuando dos mundos se encuentran… y todo encaja 🌍💫🤍",
+"2026-04-14":"Cuando el deseo también se convierte en lenguaje del amor 🔥💖",
+"2026-04-15":"Cuando el esfuerzo vale cada segundo a tu lado ⏳💞✨"
   
 }
 
