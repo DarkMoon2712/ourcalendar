@@ -90,7 +90,11 @@ const notes = {
 "2026-04-12":"Cuando el amor también se abre paso hacia nuevos lazos 🤝💞✨",
 "2026-04-13":"Cuando dos mundos se encuentran… y todo encaja 🌍💫🤍",
 "2026-04-14":"Cuando el deseo también se convierte en lenguaje del amor 🔥💖",
-"2026-04-15":"Cuando el esfuerzo vale cada segundo a tu lado ⏳💞✨"
+"2026-04-15":"Cuando el esfuerzo vale cada segundo a tu lado ⏳💞✨",
+"2026-04-16":"Cuando lo cotidiano se vuelve prueba… y el amor se queda 🏡💖✨",
+"2026-04-17":"Cuando te veo sostenerlo todo… y aun así sigues sonriendo 💪😊🤍",
+"2026-04-18":"Cuando imagino un hogar contigo… y todo cobra sentido 🏡💞✨",
+"2026-04-19":"Cuando en ti veo el hogar que aún no existe 🏠💭🤍"
   
 }
 
