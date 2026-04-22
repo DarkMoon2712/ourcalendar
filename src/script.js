@@ -152,12 +152,27 @@ $("#next").click(function () {
   }
 });
 
+function obtenerNombreImagen(year, month) {
+  const nombres = [
+    "enero","febrero","marzo","abril","mayo","junio",
+    "julio","agosto","septiembre","octubre","noviembre","diciembre"
+  ];
+
+  return `img/${nombres[month]}_${year}.png`;
+}
+
 function renderCalendar() {
   let year = currentDate.getFullYear();
   let month = currentDate.getMonth();
 
   $month.text(monthNames[month] + " " + year);
   $monthBg.text(month + 1);
+
+  // 🔥 IMAGEN DINÁMICA
+  const imageDiv = document.querySelector(".image");
+  const nuevaImagen = obtenerNombreImagen(year, month);
+
+  imageDiv.style.backgroundImage = `url('${nuevaImagen}')`;
 
   buildCalendar(year, month);
 }
@@ -233,7 +248,7 @@ $(document).on("click","td",function(){
 
   lastSong = random;
 
-  audio.src = random + ".mp3";
+  audio.src = "music/" + random + ".mp3";
   audio.currentTime = 0;
   audio.play();
 
@@ -247,3 +262,49 @@ $(window).click(function(e){
     $modal.hide();
   }
 });
+
+// ❤️ generar corazones dinámicos
+function createHearts() {
+  const container = document.querySelector(".hearts-container");
+
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+
+    // posición horizontal aleatoria
+    heart.style.left = Math.random() * 100 + "vw";
+
+    // tamaño aleatorio
+    const size = Math.random() * 20 + 10;
+    heart.style.width = size + "px";
+    heart.style.height = size + "px";
+
+    // velocidad aleatoria
+    heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+
+    container.appendChild(heart);
+
+    // eliminar después de animarse
+    setTimeout(() => {
+      heart.remove();
+    }, 8000);
+
+  }, 400);
+}
+
+// iniciar corazones
+createHearts();
+
+// ⏳ LOADER 5 segundos
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    document.getElementById("loader").style.opacity = "0";
+
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+      document.querySelector(".flex-contatiner").style.opacity = "1";
+    }, 800);
+
+  }, 5000);
+});
+
