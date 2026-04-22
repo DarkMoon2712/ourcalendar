@@ -1,14 +1,28 @@
-const start = new Date("2026-01-26")
-const maxEnd = new Date("2027-01-26")
-const today = new Date()
+var $month = $("#js-month");
+var $monthBg = $("#js-month-bg");
+var $tbody = $("#js-calendar-body");
 
-const end = today < maxEnd ? today : maxEnd
+var $modal = $("#modal");
+var $modalDate = $("#modal-date");
+var $modalText = $("#modal-text");
+var $close = $("#close");
 
-let currentDate = null
+let today = new Date();
+let currentDate = new Date(today.getFullYear(), today.getMonth());
 
-const notes = {
+const minDate = new Date(2026, 0);
+const maxDate = new Date(2027, 0);
 
-"2026-01-26":"La decisión que mi corazón ya había tomado ❤️",
+if (currentDate < minDate) currentDate = minDate;
+if (currentDate > maxDate) currentDate = maxDate;
+
+const monthNames = [
+  "Enero","Febrero","Marzo","Abril","Mayo","Junio",
+  "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+];
+
+const mensajes = {
+  "2026-01-26":"La decisión que mi corazón ya había tomado ❤️",
 "2026-01-27":"Nos reconocimos más allá de las palabras ✨",
 "2026-01-28":"Despertar sabiendo que ahora éramos nosotros 🌅💞",
 "2026-01-29":"Cuando tu fragilidad movió los cimientos de mi mundo 🥺💔",
@@ -95,234 +109,141 @@ const notes = {
 "2026-04-17":"Cuando te veo sostenerlo todo… y aun así sigues sonriendo 💪😊🤍",
 "2026-04-18":"Cuando imagino un hogar contigo… y todo cobra sentido 🏡💞✨",
 "2026-04-19":"Cuando en ti veo el hogar que aún no existe 🏠💭🤍"
-  
+};
+
+const fechasEspeciales = [
+  "2026-01-26",
+  "2026-02-14",
+  "2026-02-26",
+  "2026-03-08",
+  "2026-03-14",
+  "2026-03-26",
+  "2026-04-26",
+  "2026-05-26",
+  "2026-06-26",
+  "2026-07-26",
+  "2026-08-26",
+  "2026-09-26",
+  "2026-10-26",
+  "2026-11-26",
+  "2026-12-26",
+  "2027-01-26"
+
+];
+
+// 🚫 evitar repetir canción
+let lastSong = null;
+
+$(window).on("load", renderCalendar);
+
+$("#prev").click(function () {
+  let newDate = new Date(currentDate.getFullYear(), currentDate.getMonth()-1);
+  if (newDate >= minDate) {
+    currentDate = newDate;
+    renderCalendar();
+  }
+});
+
+$("#next").click(function () {
+  let newDate = new Date(currentDate.getFullYear(), currentDate.getMonth()+1);
+  if (newDate <= maxDate) {
+    currentDate = newDate;
+    renderCalendar();
+  }
+});
+
+function renderCalendar() {
+  let year = currentDate.getFullYear();
+  let month = currentDate.getMonth();
+
+  $month.text(monthNames[month] + " " + year);
+  $monthBg.text(month + 1);
+
+  buildCalendar(year, month);
 }
 
-const specialDates = [
-"2026-01-26",
-"2026-02-14",
-"2026-02-26",
-"2026-03-08",
-"2026-03-14",
-"2026-03-26"
-]
+function buildCalendar(year, month) {
+  let today = new Date();
 
-const calendar = document.getElementById("calendar")
+  let start = new Date(year, month, 1);
+  let end = new Date(year, month + 1, 0);
 
-function formatDate(d){
-let day = String(d.getDate()).padStart(2,"0")
-let month = String(d.getMonth()+1).padStart(2,"0")
-let year = d.getFullYear()
-return `${day}/${month}/${year}`
+  let startDay = start.getDay();
+  let endDay = end.getDate();
+
+  let date = 1;
+  let html = "";
+  let skip = true;
+
+  for (let i=0;i<6;i++){
+    html += "<tr>";
+
+    for (let j=0;j<7;j++){
+      if (i===0 && j===startDay) skip=false;
+      if (date > endDay) skip=true;
+
+      let currentDay = date;
+      let value = skip ? "" : date++;
+
+      let monthNum = month + 1;
+      let key = `${year}-${String(monthNum).padStart(2,'0')}-${String(currentDay).padStart(2,'0')}`;
+
+      let isToday =
+        today.getFullYear()===year &&
+        today.getMonth()===month &&
+        today.getDate()===currentDay;
+
+      let isSpecial = fechasEspeciales.includes(key);
+
+      let cls = "";
+      if (isToday && !skip) cls += " is-today";
+      if (isSpecial && !skip) cls += " special-day";
+
+      html += `<td class="${cls}">${value}</td>`;
+    }
+
+    html += "</tr>";
+  }
+
+  $tbody.html(html);
 }
 
-document.querySelector(".subtitle").innerText =
-`26/01/2026 — ${formatDate(end)}`
+$(document).on("click","td",function(){
+  let day = $(this).text().trim();
+  if(!day) return;
 
-function generateMonths(){
+  let month = currentDate.getMonth() + 1;
+  let year = currentDate.getFullYear();
 
-let months=[]
-let current=new Date(start)
-current.setDate(1)
+  let key = `${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  let fullDate = `${day} de ${monthNames[month-1]} del ${year}`;
 
-while(current<=maxEnd){
+  let mensaje = mensajes[key] || "Este día también pensé en ti";
 
-let monthName=current.toLocaleString("es",{month:"long"})
-monthName=monthName.charAt(0).toUpperCase()+monthName.slice(1)
+  $modalDate.text(fullDate);
+  $modalText.text(mensaje);
 
-months.push({
-m:current.getMonth(),
-y:current.getFullYear(),
-name:`${monthName} ${current.getFullYear()}`
-})
+  // 🎵 música aleatoria SIN repetir
+  let audio = document.getElementById("music");
+  let random;
 
-current.setMonth(current.getMonth()+1)
+  do {
+    random = Math.floor(Math.random() * 10) + 1;
+  } while (random === lastSong);
 
-}
+  lastSong = random;
 
-return months
+  audio.src = random + ".mp3";
+  audio.currentTime = 0;
+  audio.play();
 
-}
+  $modal.css("display","flex");
+});
 
-const months=generateMonths()
+$close.click(()=> $modal.hide());
 
-function buildCalendar(){
-
-months.forEach(mon=>{
-
-let firstDay=new Date(mon.y,mon.m,1).getDay()
-let daysInMonth=new Date(mon.y,mon.m+1,0).getDate()
-
-let monthDiv=document.createElement("div")
-monthDiv.className="month"
-
-let title=document.createElement("div")
-title.className="month-title"
-title.innerText=mon.name
-
-let weekdays=document.createElement("div")
-weekdays.className="weekdays"
-
-let names=["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"]
-
-names.forEach(n=>{
-let d=document.createElement("div")
-d.innerText=n
-weekdays.appendChild(d)
-})
-
-let days=document.createElement("div")
-days.className="days"
-
-for(let i=0;i<firstDay;i++){
-let empty=document.createElement("div")
-empty.className="day disabled"
-days.appendChild(empty)
-}
-
-for(let d=1;d<=daysInMonth;d++){
-
-let date=`${mon.y}-${String(mon.m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`
-let current=new Date(date)
-
-let day=document.createElement("div")
-day.className="day"
-
-let num=document.createElement("div")
-num.className="day-number"
-num.innerText=d
-
-day.appendChild(num)
-
-if(current<start || current>end){
-
-day.classList.add("disabled")
-
-}else{
-
-if(specialDates.includes(date)){
-day.classList.add("special")
-}
-
-day.onclick=()=>openNote(date)
-
-}
-
-days.appendChild(day)
-
-}
-
-monthDiv.appendChild(title)
-monthDiv.appendChild(weekdays)
-monthDiv.appendChild(days)
-
-calendar.appendChild(monthDiv)
-
-})
-
-}
-
-function explodeHearts(){
-
-for(let i=0;i<25;i++){
-
-let heart=document.createElement("div")
-heart.className="heart"
-heart.innerText="✮⋆˙"
-
-let x=(Math.random()*300-150)+"px"
-let y=(Math.random()*300-150)+"px"
-
-heart.style.left=(window.innerWidth/2)+"px"
-heart.style.top=(window.innerHeight/2)+"px"
-
-heart.style.setProperty("--x",x)
-heart.style.setProperty("--y",y)
-
-document.body.appendChild(heart)
-
-setTimeout(()=>{
-heart.remove()
-},1200)
-
-}
-
-}
-
-function openNote(date){
-
-currentDate = date
-
-document.getElementById("modal").style.display="flex"
-document.getElementById("modalDate").innerText=date
-
-if(notes[date]){
-document.getElementById("modalText").innerHTML=`<em>"${notes[date]}"</em>`
-}else{
-document.getElementById("modalText").innerHTML=`<em>"Hoy también pensé en ti ❤️"</em>`
-}
-
-document.getElementById("loveSound").play()
-explodeHearts()
-
-}
-
-function nextNote(){
-
-let next=new Date(currentDate)
-next.setDate(next.getDate()+1)
-
-let nextStr=next.toISOString().split("T")[0]
-
-if(next<=end){
-openNote(nextStr)
-}
-
-}
-
-function prevNote(){
-
-let prev=new Date(currentDate)
-prev.setDate(prev.getDate()-1)
-
-let prevStr=prev.toISOString().split("T")[0]
-
-if(prev>=start){
-openNote(prevStr)
-}
-
-}
-
-function closeModal(){
-document.getElementById("modal").style.display="none"
-}
-
-buildCalendar()
-
-/* CORAZONES FLOTANTES */
-
-const heartContainer = document.createElement("div")
-heartContainer.className = "floating-hearts"
-document.body.appendChild(heartContainer)
-
-function createFloatingHeart(){
-
-const heart = document.createElement("div")
-heart.className = "floating-heart"
-heart.innerText = "❤︎"
-
-heart.style.left = Math.random()*100 + "vw"
-heart.style.fontSize = (Math.random()*18+12) + "px"
-
-const duration = Math.random()*6 + 6
-heart.style.animationDuration = duration + "s"
-
-heartContainer.appendChild(heart)
-
-setTimeout(()=>{
-heart.remove()
-}, duration*1000)
-
-}
-
-setInterval(createFloatingHeart, 500)
+$(window).click(function(e){
+  if($(e.target).is("#modal")){
+    $modal.hide();
+  }
+});

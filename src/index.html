@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8">
+  <title>Calendario 2026</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nuestro Calendario</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Lexend:wght@100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<div class="floating-hearts"></div>
+<div class="flex-contatiner">
+  <div class="calendar-container">
 
-<h1>Nuestro Calendario</h1>
+    <div class="image-container">
+      <div class="image"></div>
+    </div>
 
-<p class="subtitle">26/01/2026 — ...</p>
+    <div class="calendar">
 
-<div class="calendar" id="calendar"></div>
+      <h2 class="month-title" id="js-month-bg"></h2>
 
-<div class="modal" id="modal">
+      <div class="nav">
+        <button id="prev">←</button>
+        <h2 id="js-month"></h2>
+        <button id="next">→</button>
+      </div>
 
-<div class="modal-card">
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>D</th><th>L</th><th>M</th><th>M</th><th>J</th><th>V</th><th>S</th>
+          </tr>
+        </thead>
+        <tbody id="js-calendar-body"></tbody>
+      </table>
 
-<h2 id="modalDate"></h2>
-
-<p id="modalText"></p>
-
-<div class="modal-buttons">
-
-<button onclick="prevNote()">Anterior</button>
-<button onclick="nextNote()">Siguiente</button>
-<button onclick="closeModal()">Cerrar</button>
-
+    </div>
+  </div>
 </div>
 
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h2 id="modal-date"></h2>
+    <p id="modal-text"></p>
+  </div>
 </div>
 
-</div>
+<!-- 🎵 AUDIO -->
+<audio id="music"></audio>
 
-<audio id="loveSound" src="music.mp3"></audio>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="script.js"></script>
 
 </body>
-
 </html>
