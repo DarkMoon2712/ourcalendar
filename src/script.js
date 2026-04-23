@@ -108,7 +108,10 @@ const mensajes = {
 "2026-04-16":"Cuando lo cotidiano se vuelve prueba… y el amor se queda 🏡💖✨",
 "2026-04-17":"Cuando te veo sostenerlo todo… y aun así sigues sonriendo 💪😊🤍",
 "2026-04-18":"Cuando imagino un hogar contigo… y todo cobra sentido 🏡💞✨",
-"2026-04-19":"Cuando en ti veo el hogar que aún no existe 🏠💭🤍"
+"2026-04-19":"Cuando en ti veo el hogar que aún no existe 🏠💭🤍",
+"2026-04-20":"Cuando lo nuestro deja huella… incluso en otros 💫💞✨",
+"2026-04-21":"Cuando en lo cotidiano descubro el futuro que sueño contigo 🌅💭💖",
+"2026-04-22":"Cuando en lo simple también encuentro felicidad contigo 🌼😊💞"
 };
 
 const fechasEspeciales = [
@@ -158,7 +161,7 @@ function obtenerNombreImagen(year, month) {
     "julio","agosto","septiembre","octubre","noviembre","diciembre"
   ];
 
-  return `img/${nombres[month]}_${year}.png`;
+  return `img/${nombres[month]}_${year}.webp`;
 }
 
 function renderCalendar() {
