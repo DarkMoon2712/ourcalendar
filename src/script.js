@@ -111,7 +111,9 @@ const mensajes = {
 "2026-04-19":"Cuando en ti veo el hogar que aún no existe 🏠💭🤍",
 "2026-04-20":"Cuando lo nuestro deja huella… incluso en otros 💫💞✨",
 "2026-04-21":"Cuando en lo cotidiano descubro el futuro que sueño contigo 🌅💭💖",
-"2026-04-22":"Cuando en lo simple también encuentro felicidad contigo 🌼😊💞"
+"2026-04-22":"Cuando en lo simple también encuentro felicidad contigo 🌼😊💞",
+"2026-04-23":"Cuando imagino nuestro futuro… en lo que ya eres hoy 🔮💭💞",
+"2026-04-24":"Cuando el silencio pesa… y el amor busca entender 🤫💔🤍"
 };
 
 const fechasEspeciales = [
