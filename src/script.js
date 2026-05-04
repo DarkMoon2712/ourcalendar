@@ -113,7 +113,17 @@ const mensajes = {
 "2026-04-21":"Cuando en lo cotidiano descubro el futuro que sueño contigo 🌅💭💖",
 "2026-04-22":"Cuando en lo simple también encuentro felicidad contigo 🌼😊💞",
 "2026-04-23":"Cuando imagino nuestro futuro… en lo que ya eres hoy 🔮💭💞",
-"2026-04-24":"Cuando el silencio pesa… y el amor busca entender 🤫💔🤍"
+"2026-04-24":"Cuando el silencio pesa… y el amor busca entender 🤫💔🤍",
+"2026-04-25":"Vivir por ti, esperarte por nosotros ⏳💖🤍",
+"2026-04-26":"Tres meses de amor, incluso en medio de la incertidumbre 🗓️💞✨",
+"2026-04-27":"Cuando amar también significa sostenerte en tus días más grises ☁️💖",
+"2026-04-28":"Cuando hablar del futuro contigo deja de ser un sueño y empieza a sentirse destino 🔮💞✨",
+"2026-04-29":"Cuando incluso la distancia se llena de deseo, ternura y promesas 🌙🔥💖",
+"2026-04-30":"Cuando nuestros sueños comienzan a tomar forma entre amor, deseo y responsabilidad 💭🏡💞",
+
+"2026-05-01":"Entre planes inciertos y la certeza de que siempre te elegiría a ti 🛤️💖✨",
+"2026-05-02":"Cuando el amor empieza a sentirse también como familia 👨‍👩‍👧💞🤍",
+"2026-05-03":"Cuando la confianza convierte el deseo en un lenguaje solo nuestro 🔥🫶💖"
 };
 
 const fechasEspeciales = [
